@@ -1,6 +1,7 @@
 .product {
   height: 32vh;
-  width: 20vw;
+  min-width: 20vw;
+  max-width: 24vw;
   border-radius: 2px;
   padding: 0.8rem;
   background-image: radial-gradient(
@@ -29,13 +30,17 @@
   margin: 2px 2px;
 }
 .product .MuiSvgIcon-root:hover {
-  color: gray;
+  color: #f9d923;
   cursor: pointer;
+}
+.product .MuiSvgIcon-root {
+  color: #eb5353;
 }
 
 @media screen and (max-width: 600px) {
-  .product {
-    width: 180px;
+  .product,
+  .ProductSkelton {
+    width: 200px;
   }
 }
 
@@ -49,17 +54,19 @@
   margin: 1rem;
   display: flex;
   justify-content: right;
-  background-color: black;
+  background-color: #eb5353;
   color: aliceblue;
   padding: 8px;
+  border-radius: 4px;
 }
 .shoppy-icon {
   font-weight: 800;
 }
 
 .shoppy-search input {
-  padding: 2px;
+  padding: 4px;
   border-radius: 8px;
+  border-width: inherit;
 }
 
 .shoppy-search {
@@ -80,7 +87,8 @@
 
 .ProductSkelton {
   height: 32vh;
-  width: 20vw;
+  min-width: 20vw;
+  max-width: 24vw;
   border-radius: 2px;
   padding: 0.8rem;
   background-image: radial-gradient(
@@ -94,6 +102,7 @@
 
 .ProductSkelton .image-container {
   height: 20vh;
+
   background: linear-gradient(
       to right,
       rgba(255, 255, 255, 0),
